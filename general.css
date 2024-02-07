@@ -1,0 +1,182 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+    right: 0px;
+    box-sizing: border-box;
+    font-family: Playfair Display;
+    font-weight: 400;
+    word-spacing: 3px;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin-bottom: 700px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    top: 0px;
+    background-color: #9b27b079;
+}
+
+
+nav{
+    justify-content: space-between;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.header a {
+    text-align: center;
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+    font-size: 22px;
+    transition: all 0.15s ease;
+}
+
+a:hover {
+    padding: 2px 8px 2px 8px;
+    background-color: purple;
+    border-radius: 7px;
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+}
+/* 
+.logo-header {
+    display: flex;
+    position: absolute;
+    left: 1000px;
+    top: 2%;
+    z-index: 0;
+}
+
+.ij {
+    width: 1000px;
+} */
+
+#first-page {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, #ECD3FA, #f7d2c5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#first-page::before{
+    content: "";
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    transform: translate(-440px, -90px);
+    background: linear-gradient(90deg, #9c27b0,#ECD3FA);
+    border-radius: 100px;
+}
+
+.body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+    margin-bottom: 10px;
+    width: fit-content;
+    padding-left: 10px;
+}
+
+.left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 400px;
+}
+
+.intro {
+    padding-top: 200px; 
+    display: flex;
+    align-items: flex-start;
+    width: fit-content;
+}
+
+.heading {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.about-me {
+    font-size: 30px;
+    text-align: left;
+    margin-top: 60px;
+    color: black;
+    font-weight: 700;
+}
+
+.my-name {
+
+    font-family: Playfair Display;
+    font-size: 57px;
+    color: black;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 19px;
+    border: none;
+    text-align: left;
+    margin-top: 20px;
+    width: 550px;
+    color: black;
+}
+
+.right {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    z-index: 1;
+}
+
+.profile-pic {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pfp {
+    width: 375px;
+    margin-top: 37px;
+    margin-left: 700px;
+    border-radius: 8px;
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.3s; 
+    -webkit-transition-timing-function: ease; 
+}
+
+.pfp:hover {
+    transform: scale(1.1); 
+}
