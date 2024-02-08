@@ -1,0 +1,157 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+    right: 0px;
+    box-sizing: border-box;
+    font-family: Proxima Nova;
+    font-weight: 400;
+}
+
+
+#third-page  {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, #ECD3FA, #f7d2c5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-page {
+    position: relative;
+    margin-bottom: 300px;
+    margin-top: -415px;
+}
+
+.body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+
+.left-side {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 400px;
+}
+
+.form-side {
+    position: relative;
+    font-size: 21px;
+    text-align: left;
+    color: black;
+    font-weight:700;
+    width: 550px;
+    font-family: Proxima Nova;
+}
+
+.about-form {
+    padding-top: 30px;
+    padding-left: 10px;
+    font-family: Proxima Nova;
+}
+
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+
+.contact {
+    position: relative;
+    font-size: 57px;
+    text-align: right;
+    color: black;
+    font-weight:700;
+    width: 300px;
+    font-family: Proxima Nova;
+}
+ /* 
+
+.gif {
+    margin-top: 80px;
+} */ 
+
+.abstract-pic {
+    position: absolute;
+    width: 500px;
+    margin-top: 40px;
+}
+
+
+.right-side {
+    position: absolute;
+    align-items: start;
+    margin-left: 600px;
+    margin-top: -190px;
+}
+
+.form-contact {
+    width: 450px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    background-color: transparent;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #771089;
+    border-radius: 4px;
+    margin-top: 1px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 200px;
+}
+
+::placeholder {
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    color:#5d2467;
+    text-decoration: none;
+    cursor: text;
+    text-align: left;
+    opacity: 0.6;
+}
+
+
+.submit-button {
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    background-color: #5d2467;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 50px;
+    font-size: 20px;
+    width: 450px;
+}
+
+.submit-button:hover {
+    color: #5d2467;
+    background-color: #e59cf2;
+    font-weight: bold;
+    border-radius: 4px;
+    border: solid;
+    border-color: #9c27b0;
+}
