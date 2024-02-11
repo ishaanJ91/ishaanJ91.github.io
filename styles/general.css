@@ -15,9 +15,9 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
-    padding-bottom: 40px;
-    height: 100px;
-    top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 0px;
     background-color: #9b27b079;
 }
 
@@ -88,11 +88,15 @@ a:hover {
 }
 
 .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+   	"right"
+   	"left";
+    gap: 120px;
     padding-top: 200px; 
     display: flex;
-    align-items: flex-start;
-    margin-left: 60px;
-    margin-right: 250px;
+    align-items: center;
     margin-top: -50px;
 }
 
@@ -101,9 +105,17 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding-right: 300px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
+
+.right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    z-index: 1;
+}
+
 
 .heading {
     position: relative;
@@ -117,9 +129,9 @@ a:hover {
 .about-me {
     font-size: 30px;
     text-align: left;
-    margin-top: 60px;
     color: black;
     font-weight: 700;
+    margin-top: 50px;
     font-family: Proxima Nova;
 }
 
@@ -141,17 +153,10 @@ a:hover {
     font-family: Proxima Nova;
 }
 
-.right {
-    position: absolute;
+.profile-pic {
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    z-index: 1;
-}
-
-.profile-pic {
-    position: absolute;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -159,7 +164,6 @@ a:hover {
 .pfp {
     width: 375px;
     margin-top: 37px;
-    margin-left: 700px;
     border-radius: 8px;
     -webkit-transition-property: all; 
     -webkit-transition-duration: 0.3s; 
@@ -169,3 +173,18 @@ a:hover {
 .pfp:hover {
     transform: scale(1.1); 
 }
+
+@media (min-width: 500px) {
+    .intro {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "right"
+        "left";
+    }
+}
+
+/* @media (min-width: 801px) and (max-width: 1349px) {
+    .intro {
+        grid-template-columns: 1fr 1fr;
+    }
+} */

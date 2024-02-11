@@ -6,6 +6,8 @@
             Ishaan Jain
         </title>
 
+        <link rel="icon" href="images/webpfp.webp" type="webp">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -36,19 +38,15 @@
 
             <div class="header">
 
-                <!-- <div class="logo-header"> 
-                    <img class="ij" src="images/logo.png">  
-                </div> -->
-
                 <nav>
                     <ul>
                         <li><a class="link" href="#About">About</a></li>
-                        <li><a class="link" href="projects.html">Projects</a></li>
                         <li><a class="link" href="#Newsletter">Newsletter</a></li>
+                        <li><a class="link" href="#Projects">Projects</a></li>
                         <li><a class="link" href="#Contact">Contact</a></li>
                     </ul>
                 </nav>    
-            </div>
+            </div> 
 
             <div class="body">
                 <div id="About" class="intro">
@@ -124,13 +122,12 @@
         <insertion-point></insertion-point> 
 
         <section id="fourth-page">         
-
-            <div class="main-screen">
+            <div id="Projects" class="main-screen">
                 <div class="intro-proj">
                         <div class="heading-proj">
-                            <h2 class="project-name"> Projects </h2>
-                            <p class="project-about "> Take a look at few of the projects that I have worked on.
-                                The following projects have been made using HTML5, CSS3, and JavaScript </p>
+                            <h2 class="project-name"> Personal Projects </h2>
+                            <!-- <p class="project-about "> Take a look at few of the projects that I have worked on.
+                                The following projects have been made using HTML5, CSS3, and JavaScript </p> -->
                         </div>
 
                         <!-- <div class="hand-gif">
@@ -316,8 +313,8 @@
                 <div class="end-footer">
                     <div class="nav-bar">
                         <a class="nav-link" href="#About">About</a>
-                        <a class="nav-link" href="#Projects">Projects</a>
                         <a class="nav-link" href="#Newsletter">Newsletter</a>
+                        <a class="nav-link" href="#Projects">Projects</a>
                         <a class="nav-link" href="#Contact">Contact</a>
                     </div>
  
@@ -334,8 +331,7 @@
         </section>
 
     
-        <!-- <script src="https://smtpjs.com/v3/smtp.js"> </script>
-        <script> 
+        <script src="https://smtpjs.com/v3/smtp.js"> </script> <script> 
 
             function sendEmail() {
                 Email.send({
@@ -349,10 +345,10 @@
                     + "‹br> Email: " + document.getElementById("email").value 
                 }).then(
                 message => alert("Subscribed Successfully")
-);
+            );
             }
 
-        </script> -->
+        </script>
 
 
     </body>
