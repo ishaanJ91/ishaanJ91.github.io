@@ -211,14 +211,16 @@
          /* Adjust the padding-left based on your design */
     }
 
-    .gif-vid {
+    .gif-vid-1,
+    .gif-vid-2,
+    .gif-vid-3 {
         max-width: 405px;
-        margin-left: -25px;
-
+        margin-left: -2px;
     }
 
+
     .form-newsletter {
-        width: 95%;
+        width: 105%;
        
     }
 
