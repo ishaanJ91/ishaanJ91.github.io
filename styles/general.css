@@ -1,8 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    left: 0px;
-    right: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: Proxima Nova;
     font-weight: 400;
@@ -18,11 +16,10 @@
     padding-top: 20px;
     padding-bottom: 20px;
     top: 0px;
-    background-color: #9b27b079;
+
 }
 
-
-nav{
+nav {
     justify-content: space-between;
     width: 100%;
 }
@@ -34,7 +31,7 @@ ul {
 }
 
 li {
-    padding: 20px 25px;;
+    padding: 20px 25px;
     justify-content: center;
     text-align: center;
 }
@@ -42,7 +39,7 @@ li {
 .header a {
     text-align: center;
     text-decoration: none;
-    color: purple;
+    color: rgb(200, 136, 200);
     font-weight: bold;
     font-size: 22px;
     transition: all 0.15s ease;
@@ -59,25 +56,18 @@ a:hover {
 
 #first-page {
     position: relative;
-    min-height: 100vh;
-    width: 100%;
+    height: calc(100*-vh);
+    /* height: -webkit-fill-available; */
+    width: 100vw;
     background: linear-gradient(90deg, #ECD3FA, #f7d2c5);
+    background: url('https://i.pinimg.com/originals/34/ac/69/34ac692bf5ec7927319b911185b39d35.gif');
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-/* 
-#first-page::before{
-    content: "";
-    position: absolute;
-    height: 160px;
-    width: 160px;
-    transform: translate(-440px, -90px);
-    background: linear-gradient(90deg, #9c27b0,#ECD3FA);
-    border-radius: 100px;
-} */
 
-.body {
+.body-top {
     position: relative;
     display: flex;
     align-items: center;
@@ -88,16 +78,15 @@ a:hover {
 }
 
 .intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-   	"right"
-   	"left";
+    margin-top: 150px;
+    margin-bottom: 100px;
+    grid-template-columns: auto auto;
     gap: 120px;
-    padding-top: 200px; 
+    padding-top: 80px;
+    position: relative;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    margin-top: -50px;
 }
 
 .left {
@@ -116,7 +105,6 @@ a:hover {
     z-index: 1;
 }
 
-
 .heading {
     position: relative;
     display: flex;
@@ -129,7 +117,7 @@ a:hover {
 .about-me {
     font-size: 30px;
     text-align: left;
-    color: black;
+    color: rgba(255, 255, 255, 0.792);
     font-weight: 700;
     margin-top: 50px;
     font-family: Proxima Nova;
@@ -138,7 +126,7 @@ a:hover {
 .my-name {
     font-family: Proxima Nova;
     font-size: 75px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 700;
 }
 
@@ -149,7 +137,7 @@ a:hover {
     margin-top: 20px;
     margin-left: 60px;
     width: 520px;
-    color: black;
+    color: rgba(255, 255, 255, 0.792);
     font-family: Proxima Nova;
 }
 
@@ -165,26 +153,54 @@ a:hover {
     width: 375px;
     margin-top: 37px;
     border-radius: 8px;
-    -webkit-transition-property: all; 
-    -webkit-transition-duration: 0.3s; 
-    -webkit-transition-timing-function: ease; 
+    transition: all 0.3s ease;
 }
 
 .pfp:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
-@media (min-width: 500px) {
+/* Media Queries */
+
+@media (min-width: 200px) and (max-width: 1200px) {
     .intro {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "right"
-        "left";
+        gap: 20px;
+        flex-direction: column;
+        margin-top: 200px;
+    }
+
+    .about-me {
+        font-size: 30px;
+    }
+
+    .my-name {
+        font-size: 75px;
+    }
+
+    .description {
+        font-size: 22px;
+    }
+
+    .pfp {
+        width: 100%;
+        min-width: 50px;
+        max-width: 375px;
     }
 }
 
-/* @media (min-width: 801px) and (max-width: 1349px) {
-    .intro {
-        grid-template-columns: 1fr 1fr;
+/* 
+@media (max-width: 600px) {
+    .pfp {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .about-me {
+        font-size: 24px;
+    }
+
+    .my-name {
+        font-size: 50px;
     }
 } */

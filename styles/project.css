@@ -10,16 +10,16 @@
 }
 
 
-#fourth-page {
+#third-page {
     position: relative;
-    min-height: 100vh;
-    width: 100%;
-    background: linear-gradient(90deg, #ECD3FA, #f7d2c5);
+    height: calc(100*-vh);
+    width: 100vw;
+    background: url('https://i.pinimg.com/originals/43/18/23/431823dd2958601f94c1a7b496c966c9.gif');
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    margin-top: -100px;
 }
 
 
@@ -32,10 +32,14 @@
     animation: fadeIn 2s ease-in; 
 }
 
+
 .main-screen {
     position: relative;
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    z-index: 1;
 }
 
 
@@ -43,30 +47,396 @@
     position: relative;
     display: flex;
     width: fit-content;
+    margin-left: 120px;
 }
+
 
 .heading-proj {
     position: absolute;
     display: flex;
     flex-direction: column;
     width: fit-content;
-    margin-left: 80px;
+
 }
 
 .project-name {
+    position: relative;
     font-size: 57px;
-    padding-left: 30px;
-    color: black;
+    color: white;
     font-weight: 700;
     font-family: Proxima Nova;  
-    width: max-content;
+    width: 550px;
 }
 
-.project-about {   
+/* Project-style */
+
+
+
+.all-projects {
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.project-1 {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.left-project-1{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.card-1{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+    background: rgba(105, 13, 197, 0.763);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
     margin-top: 20px;
-    font-size: 21px;
-    padding-left: 32px;
-    color: black;
-    width: 850px;
+}
+
+.bg {
+    opacity: 0.8;
+    z-index: 0;
+    height: 300px;
+}
+  
+.card-1::before,
+.card-2::before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -40%;
+    left: -20%;
+    border-radius: 50%;
+    border: 35px solid rgba(255, 255, 255, 0.102);
+    transition: all .8s ease;
+    filter: blur(.5rem);
+}
+
+  
+.text {
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    font-weight: 900;
+    z-index: 3;
+    font-size: 1.2em;
+}
+
+.right-project-1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    grid-template-columns: auto auto;
+}
+
+
+.desc-project-one {
+    margin-top: -50px;
+    position: relative;
+    justify-content: center;
+    margin-left: 60px;
     font-family: Proxima Nova;
 }
+
+.name-1 {
+    color: white;
+    border-radius: 12px;
+    margin-left: 15px;
+    font-weight: 600;
+    font-family: Proxima Nova;
+}
+
+span{
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: Proxima Nova;
+}
+
+.subtitle {
+    margin-top: 10px;
+    margin-left: 5px;
+    letter-spacing: 0.15px;
+    font-size: 19px;
+    color: rgba(255, 255, 255, 0.697);
+    width: 500px;
+    font-family: Proxima Nova;
+}
+  
+.card-1:hover::before,
+.card-2:hover::before {
+    width: 140px;
+    height: 140px;
+    top: -25%;
+    left: 60%;
+    filter: blur(0rem);
+}
+
+.project-2 {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+
+.left-project-2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.card-2 {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+    background: rgba(105, 13, 197, 0.763);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.right-project-2 {
+    position: relative;
+    align-items: center;
+    display: flex;
+    margin-left: 60px; /* Adjust this value as needed */
+}
+
+.desc-project-two {
+    margin-top: -50px;
+    position: relative;
+    justify-content: center;
+    font-family: Proxima Nova;
+}
+
+.name-2 {
+    border-radius: 12px;
+    color: black;
+    font-family: Raleway, sans-serif;
+    margin-left: 15px;
+    font-family: Proxima Nova;
+    font-weight: 500px;
+}
+
+
+.button-icon-1 {
+    display: flex;
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 80px;
+    border: 3px #fff solid;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.button-icon-2 {
+    display: flex;
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 20px;
+    border: 3px #fff solid;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+    
+.icon {
+    background-color: #fff;
+    padding: 10px 10px 5px 10px;
+}
+    
+.icon svg {
+    width: 25px;
+    height: 25px;
+}
+    
+.cube {
+    transition: all 0.4s;
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 20px;
+}
+    
+.button-icon-1:hover,
+.button-icon-2:hover {
+    border-color: #771089;
+}
+    
+.button-icon-1:hover .cube {
+    transform: rotateX(90deg);
+}
+
+.button-icon-2:hover .cube {
+    transform: rotateX(90deg);
+}
+    
+.side {
+    position: absolute;
+    height: 47px;
+    width: 200px;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+
+}
+    
+.top {
+    background: #ECD3FA ;
+    border-bottom: 3px solid #771089;
+    color: #000000;
+    transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+}
+
+.front {
+    background: #222229;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    transform: translate3d(0, 0, 1em);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+}
+
+.hand-gif {
+    position: absolute;
+    margin-top: -450px;
+    margin-left: 10px;
+    transform: rotate(180deg) translateX(-400px);
+    
+}
+
+.hand-pic {
+    width: 250px;
+}
+
+/* Add this style for UFO rotation */
+.hand-rotate {
+    transition: transform 0.8s ease-out;
+}
+
+
+
+/* Media Queries */
+
+@media (min-width: 200px) and (max-width: 1200px) {
+
+
+    .main-screen {
+        justify-content: center;
+    }
+
+    .intro-proj {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -20px;
+    }
+
+    .heading-proj,
+    .project-name {
+        margin: 0px;
+        margin-bottom: -40px;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        text-align: center; /* Center text within .project-name */
+    }
+
+    .all-projects {
+        margin-left: 0px;
+        margin-right: 0px;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+
+
+    .project-1,
+    .project-2 {
+        margin-left: 0px;
+        margin-right: 0px;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .left-project-1,
+    .left-project-2,
+    .right-project-1,
+    .right-project-2 {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .right-project-1,
+    .right-project-2 {
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+
+    .desc-project-one,
+    .desc-project-two,
+    .name-1,
+    .name-2,
+    .subtitle {
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 19px;
+    }
+
+    .button-icon-1 {
+        margin-top: 200px;
+        margin-left: 125px;
+
+    }
+
+    .button-icon-2 {
+        margin-top: 225px;
+        margin-left: 125px;
+
+    }
+
+
+}
+
