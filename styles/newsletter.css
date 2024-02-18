@@ -92,15 +92,25 @@
 
 .picture {
     position: relative;
-    display: flex;
+    display: grid;
     align-items: center;
     width: fit-content;
-    margin-top: 70px;
 
+    
 }
 
-.gif-vid {
-    width: 370px;
+.gif-vid-1 {
+    width: 350px;
+    margin-left: 80px;
+}
+
+.gif-vid-2 {
+    width: 350px;
+    margin-left: 80px;
+}
+
+.gif-vid-3 {
+    width: 350px;
     margin-left: 80px;
 }
 
