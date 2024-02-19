@@ -62,6 +62,7 @@ a:hover {
     background: linear-gradient(90deg, #ECD3FA, #f7d2c5);
     background: url('https://i.pinimg.com/originals/34/ac/69/34ac692bf5ec7927319b911185b39d35.gif');
     background-size: cover;
+
     display: flex;
     align-items: center;
     justify-content: center;

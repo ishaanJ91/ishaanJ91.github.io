@@ -148,6 +148,22 @@
 
 
 .subscribe-button {
+    margin-top: 20px;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    background-color: #5d2467;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 50px;
+    font-size: 20px;
+    width: 450px;
+}
+
+.substack-button {
+    margin-top: 15px;
     font-family: Raleway, sans-serif;
     font-weight: bold;
     background-color: #5d2467;
@@ -162,6 +178,15 @@
 }
 
 .subscribe-button:hover {
+    color: #5d2467;
+    background-color: #e59cf2;
+    font-weight: bold;
+    border-radius: 4px;
+    border: solid;
+    border-color: #9c27b0;
+}
+
+.substack-button:hover {
     color: #5d2467;
     background-color: #e59cf2;
     font-weight: bold;
@@ -189,6 +214,7 @@
     }
 
     .title-newsletter {
+        color: white;
         font-size: 57px; 
         text-align: center;
         justify-content: center;
@@ -196,9 +222,11 @@
     }
 
     .desc-newsletter {
+        color: white;
         font-size: 21px; 
         justify-content: center;
     }
+    
 
     .desc {
         position: relative;
@@ -218,15 +246,17 @@
         margin-left: -2px;
     }
 
+    .gif-vid-1 {
+        margin-top: 50px;
+    }
 
     .form-newsletter {
         width: 105%;
-       
     }
 
-    .subscribe-button {
+    .subscribe-button, 
+    .substack-button {
         width: 100%;
-      
     }
 }
 
